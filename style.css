@@ -50,9 +50,6 @@ transition: transform 0.3s;
     transition: transform 0.3s 0.3s;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
-
 
 * {
     margin: 0;
