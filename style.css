@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 
 
 * {
@@ -35,56 +35,6 @@ html {
     text-transform: capitalize;
     letter-spacing: 0.5rem;
     text-shadow: 0.3rem 0.3rem 0.3rem rgb(97, 97, 97);
-}
-
-.section-1-icons i {
-font-size: 35rem;
-color: #991717;
-position: absolute;
-transform: translate(-50%, -50%) scale(0);
-text-shadow: 0.2rem 0.2rem 0.2rem rgb(67, 67, 67);
-transition: transform 0.3s;
-}
-
-.section-1-icons i.change {
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s 0.3s;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Antic Slab', serif;
-}
-
-
-html {
-    font-size: 62.5%;
-}
-
-.section-1 {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.section-heading {
-    font-size: 12rem;
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 0.5rem;
-    text-shadow: 0.3rem 0.3rem 0.3rem rgb(97, 97, 97);
-    
 }
 
 .section-1-icons i {
@@ -205,6 +155,10 @@ background-color: rgb(226, 226, 226);
 padding: 5rem 0;
 }
 
+.section-3 h1 {
+    color: #af0000;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -218,12 +172,50 @@ padding: 5rem 0;
     margin: 4rem 1rem;
 }
 
+.gallery-link::before {
+    content: "";
+    position: absolute;
+    top: 2vw;
+    left: 80%;
+    width: 0.2rem;
+    height: 0%;
+    background-color: #e92929;
+    transition: height .5s;
+    z-index: 10;
+}
+
+.gallery-link:hover::before {
+    height: 80%;
+}
+
+.gallery-link:hover::after {
+    width: 90%;
+}
+
+.gallery-link::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #e92929;
+    transition: width .5s;
+}
+
 .device-img {
-    width: 25vw;
-    height: 25vw;
-    /* max-width: 500px;
-    max-height: 500px; */
+    /* width: 25vw;
+    height: 25vh; */
+    max-width: 500px;
+    max-height: 500px;
     object-fit:contain;
+    box-shadow: 0.3rem 0.3rem 0.1rem rgb(125, 125, 125);
+}
+
+.gallery-link:hover .device-img {
+    filter: blur(0.5rem);
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .device-name {
@@ -235,17 +227,34 @@ padding: 5rem 0;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: rgb(0, 0, 0);
+    overflow: hidden;
+    transform: scale(0);
 }
+
+.gallery-link:hover .device-name {
+    transform: scale(1);
+}
+
+
 
 .device-description {
     position: absolute;
     bottom: 3vw;
     left: 2rem;
     width: 70%;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.gallery-link:hover .device-description {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
 }
 /*End of Section 3*/
