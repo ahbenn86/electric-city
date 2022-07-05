@@ -70,8 +70,6 @@ html {
     top: 1rem;
     left: 5rem;
     border-radius: 30rem 30rem 15rem 15rem;
-    /* box-shadow: 0.1rem 0.1rem 0.1rem
-    #000, -0.1rem -0.1rem 0.1rem #000; */
     cursor: pointer;
     transition: top 0.4s 0.2s;
 }
@@ -89,7 +87,6 @@ html {
     position: absolute;
     top: -15rem;
     left: calc(50% - 0.15rem);
-    /* box-shadow: 0.1rem 0 0.1rem #000; */
 }
 
 /*End of Navbar*/
