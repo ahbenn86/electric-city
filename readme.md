@@ -2,7 +2,7 @@
 ### A retail store for electronic products.    
 <br/>
 
-<a href="https://ahbenn86.github.io/electronics/">Click to view live</a>
+<a href="https://ahbenn86.github.io/electric-city/">Click to view live</a>
 
 
 <br/>
