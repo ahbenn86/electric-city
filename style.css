@@ -16,6 +16,12 @@ html {
 }
 /*End of default styles*/
 
+/*Start of header*/
+.header-img {
+  width: 100vw;
+}
+/*End of header*/
+
 /*Navbar*/
 .navbar {
   width: 100%;
@@ -88,7 +94,6 @@ html {
   top: -15rem;
   left: calc(50% - 0.15rem);
 }
-
 /*End of Navbar*/
 
 
